@@ -1,10 +1,11 @@
 from random import randint
+from engine import welcome_user
 import prompt
 
 count_of_correct_answers = 3
 
 def game_even():
-    welcome_user
+    welcome_user()
     print 'Answer "yes" if the number is even, otherwise answer "no".'
-    
+
 
