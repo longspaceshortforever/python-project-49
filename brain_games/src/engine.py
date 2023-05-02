@@ -1,6 +1,7 @@
 import prompt
 from random import randint 
 
+
 def welcome_user():
     """Greeting user and gives name"""
     print("Welcome to the Brain Games!")
@@ -9,5 +10,5 @@ def welcome_user():
 
 def generate_number():
     """Generate random integral number"""
-    RANDOM_NUMBER = randint(0, 100)
-    print(RANDOM_NUMBER)
+    random_number = randint(0, 100)
+    print(random_number)

@@ -8,5 +8,4 @@ GAMES_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 def game_even():
     welcome_user()
     print(GAMES_RULES)
-    CURRENT_NUMBER = generate_number
-    
+    current_number = generate_number
