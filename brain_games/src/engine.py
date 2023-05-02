@@ -11,4 +11,4 @@ def welcome_user():
 def generate_number():
     """Generate random integral number"""
     random_number = randint(0, 100)
-    print(random_number)
+    return random_number

@@ -9,3 +9,4 @@ def game_even():
     welcome_user()
     print(GAMES_RULES)
     current_number = generate_number
+    
