@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from src.brain_even_logic import game_even
-from brain_games import welcome_user
+from ..src.brain_even import game_even
+from ..engine import welcome_user
 
 
 def main():
