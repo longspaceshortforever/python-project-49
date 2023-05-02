@@ -1,4 +1,4 @@
-from ..engine import welcome_user
+from .engine import welcome_user
 
 
 COUNT_OF_CORRECT_ANSWERS = 3
