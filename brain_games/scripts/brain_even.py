@@ -4,7 +4,6 @@ from ..engine import welcome_user
 
 
 def main():
-    welcome_user()
     game_even()
 
 
