@@ -14,7 +14,8 @@ def generate_number():
     random_number = randint(0, 100)
     return random_number
 
+
 def check_number_is_even(number):
     if number % 2 != 0:
         return False
-    else True
+    return True
