@@ -31,11 +31,11 @@ def iterate_game_even(user):
             check_count_of_answers(user)
             iterate_game_even(user)
         else:
-            wrong_answer_msg = "\"" + f'{answer}' + "\" is wrong answer ;(. "
-            correct_answer_msg = "Correct answer was \"" + f'{correct_answer}' + "\"."
+            wrong_msg = "\"" + f'{answer}' + "\" is wrong answer ;(. "
+            correct_msg = "Correct answer was \"" + f'{correct_answer}' + "\"."
             advice = "\nLet's try again, " + f'{user}' + "!"
-            wrong_message = wrong_answer_msg + correct_answer_msg + advice
-            print(wrong_message)
+            wrong_answer_msg = wrong_msg + correct_msg + advice
+            print(wrong_answer_msg)
 
 
 def game_even():
