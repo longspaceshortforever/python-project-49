@@ -5,9 +5,10 @@ from random import randint
 def welcome_user():
     """Greeting user and gives name"""
     print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
-    return name
+    user_name = prompt.string('May I have your name? ')
+    print('Hello, {}!'.format(user_name))
+    return user_name
+
 
 def generate_number():
     """Generate random integral number"""
