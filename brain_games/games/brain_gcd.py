@@ -1,4 +1,5 @@
 from random import randint
+from math import gcd
 
 
 GAME_RULES = 'Find the greatest common divisor of given numbers.'
@@ -18,4 +19,4 @@ def make_task():
 
 
 def get_correct_answer(number1, number2):
-    return math.gcd(number1, number2)
+    return gcd(number1, number2)
