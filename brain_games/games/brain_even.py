@@ -8,12 +8,14 @@ def generate_random_number():
     return randint(0, 100)
 
 
-def make_question():
-    random_number = generate_random_number()
-    return random_number
+def make_task():
+    number = generate_random_number()
+    question = number
+    answer = get_correct_answer(number)
+    return (question, answer)
 
 
-def get_correct_answer(question):
-    if question % 2 == 0:
+def get_correct_answer(number):
+    if number % 2 == 0:
         return "yes"
     return "no"
