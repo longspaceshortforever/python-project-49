@@ -33,9 +33,3 @@ def make_task():
     answer = calculate_expression(number1, number2, operator)
     question = f'{number1}' + f' {operator} ' + f'{number2}'
     return (question, answer)
-
-
-def get_correct_answer(question):
-    if question % 2 == 0:
-        return "yes"
-    return "no"
