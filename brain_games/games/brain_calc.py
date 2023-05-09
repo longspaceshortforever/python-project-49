@@ -26,7 +26,7 @@ def calculate_expression(number1, number2, operator):
             return number1 * number2
 
 
-def make_question():
+def make_task():
     number1 = generate_random_number()
     number2 = generate_random_number()
     operator = generate_random_operator()
