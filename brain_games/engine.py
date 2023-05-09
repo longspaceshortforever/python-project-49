@@ -32,19 +32,20 @@ def generate_wrong_message(user_answer, correct_answer, user_name):
 
 def run_game_engine(game):
     answers = 0
-
     welcome_user()
     user_name = get_user_name()
     print("Hello, " + f'{user_name}')
     print(game.GAME_RULES)
 
     for _ in ROUNDS:
-        question = game.make_question()
+        question_and_answer = game.make_task()
+        question = question_and_answer[0]
+        correct_answer = str(question_and_answer[1])
         print("Question: " + f'{question}')
-        correct_answer = game.get_correct_answer(question)
         user_answer = get_user_answer()
-        
+
         if user_answer == correct_answer:
+
             print("Correct!")
             answers = answers + 1
         else:
