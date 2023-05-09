@@ -39,15 +39,14 @@ def run_game_engine(game):
     print(game.GAME_RULES)
 
     for _ in ROUNDS:
-
         question = game.make_question()
         print("Question: " + f'{question}')
         correct_answer = game.get_correct_answer(question)
         user_answer = get_user_answer()
+        
         if user_answer == correct_answer:
             print("Correct!")
             answers = answers + 1
-
         else:
             generate_wrong_message(user_answer, correct_answer, user_name)
             break
