@@ -53,4 +53,4 @@ def run_game_engine(game):
             break
 
     if answers == 3:
-        print("Congratulation, " + f'{user_name}' + "!")
+        print("Congratulations, " + f'{user_name}' + "!")
