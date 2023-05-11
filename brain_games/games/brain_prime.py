@@ -7,6 +7,7 @@ GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 def generate_random_number():
     return randint(0, 100)
 
+
 def is_prime(number):
     k = 0
     for i in range(2, number // 2 + 1):

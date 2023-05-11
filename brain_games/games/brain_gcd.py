@@ -12,7 +12,7 @@ def generate_random_number():
 def make_task():
     number1 = generate_random_number()
     number2 = generate_random_number()
-    numbers = f'{number1}' + " " +  f'{number2}'
+    numbers = f'{number1}' + " " + f'{number2}'
     question = numbers
     answer = get_correct_answer(number1, number2)
     return (question, answer)
