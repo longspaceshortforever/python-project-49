@@ -25,5 +25,8 @@ publish:
 package-install:
 		python3 -m pip install --user dist/*.whl
 
-make lint:
+uninstall:
+		python3 -m pip uninstall hexlet-code -y
+
+lint:
 		poetry run flake8 brain_games
