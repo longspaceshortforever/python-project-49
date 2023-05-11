@@ -1,10 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain-games is a bundle of math games with command line interface."
 authors = ["Boris Lazo <lazo_chita@mail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+repository = "https://github.com/longspaceshortforever/python-project-49.git"
+classifiers = ["Topic :: Games/Entertainment"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
