@@ -2,10 +2,12 @@ from random import randint
 
 
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_RANDOM_NUMBER = 0
+MAX_RANDOM_NUMBER = 100
 
 
 def generate_random_number():
-    return randint(0, 100)
+    return randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
 
 
 def is_prime(number):

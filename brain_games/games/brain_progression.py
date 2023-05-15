@@ -2,18 +2,24 @@ from random import randint
 
 
 GAME_RULES = 'What number is missing in the progression?'
+MIN_START_NUMBER = 0
+MAX_START_NUMBER = 100
+MIN_PROGRESSION_STEP = 1
+MAX_PROGRESSION_STEP = 10
+MIN_PROGRESSION_LENGTH = 5
+MAX_PROGRESSION_LENGTH = 20
 
 
 def generate_start_number():
-    return randint(0, 100)
+    return randint(MIN_START_NUMBER, MAX_START_NUMBER)
 
 
 def generate_step():
-    return randint(1, 10)
+    return randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
 
 
 def generate_progression_length():
-    return randint(5, 20)
+    return randint(MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
 
 
 def generate_progression():
