@@ -4,24 +4,6 @@ import prompt
 ROUNDS = [1, 2, 3]
 
 
-def welcome_user():
-    print("Welcome to the Brain Games!")
-
-
-def get_user_name():
-    return prompt.string('May I have your name? ')
-
-
-def get_user_answer():
-    return prompt.string("Your answer: ")
-
-
-def check_number_is_even(number):
-    if number % 2 != 0:
-        return False
-    return True
-
-
 def generate_wrong_message(user_answer, correct_answer, user_name):
     wrong_msg = "\"" + f'{user_answer}' + "\" is wrong answer ;(. "
     correct_msg = "Correct answer was \"" + f'{correct_answer}' + "\"."
@@ -32,8 +14,8 @@ def generate_wrong_message(user_answer, correct_answer, user_name):
 
 def run_game_engine(game):
     answers = 0
-    welcome_user()
-    user_name = get_user_name()
+    print("Welcome to the Brain Games!")
+    user_name = prompt.string('May I have your name? ')
     print("Hello, " + f'{user_name}')
     print(game.GAME_RULES)
 
@@ -42,7 +24,7 @@ def run_game_engine(game):
         question = question_and_answer[0]
         correct_answer = str(question_and_answer[1])
         print("Question: " + f'{question}')
-        user_answer = get_user_answer()
+        user_answer = prompt.string("Your answer: ")
 
         if user_answer == correct_answer:
 
