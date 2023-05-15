@@ -8,6 +8,7 @@ MIN_PROGRESSION_STEP = 1
 MAX_PROGRESSION_STEP = 10
 MIN_PROGRESSION_LENGTH = 5
 MAX_PROGRESSION_LENGTH = 20
+ELEMENTS_DIVIDER = " "
 
 
 def generate_start_number():
@@ -43,17 +44,10 @@ def replace_random_element(sequence):
     return (new_sequence, exluded_element)
 
 
-def make_sentence(sequence):
-    sentence = ""
-    for element in sequence:
-        sentence += str(element) + " "
-    return sentence
-
-
 def make_task():
     progression = generate_progression()
     edited_progression_and_answer = replace_random_element(progression)
     edited_progression = edited_progression_and_answer[0]
-    question = make_sentence(edited_progression)
+    question = ELEMENTS_DIVIDER.join(map(str, edited_progression))
     answer = edited_progression_and_answer[1]
     return (question, answer)
