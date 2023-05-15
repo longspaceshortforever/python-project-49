@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 
 GAME_RULES = 'What is the result of the expression?'
@@ -10,12 +10,6 @@ MAX_RANDOM_NUMBER = 100
 def generate_random_number():
     number = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     return number
-
-
-def generate_random_operator():
-    index = randint(0, 2)
-    operator = OPERATORS[index]
-    return operator
 
 
 def calculate_expression(number1, number2, operator):
@@ -31,7 +25,7 @@ def calculate_expression(number1, number2, operator):
 def make_task():
     number1 = generate_random_number()
     number2 = generate_random_number()
-    operator = generate_random_operator()
+    operator = choice(OPERATORS)
     answer = calculate_expression(number1, number2, operator)
     question = f'{number1} {operator} {number2}'
     return (question, answer)
