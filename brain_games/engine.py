@@ -1,7 +1,7 @@
 import prompt
 
 
-ROUNDS = [1, 2, 3]
+ROUNDS = 3
 
 
 def generate_wrong_message(user_answer, correct_answer, user_name):
@@ -18,7 +18,7 @@ def run_game_engine(game):
     print(f'Hello, {user_name}!')
     print(game.GAME_RULES)
 
-    for _ in ROUNDS:
+    for _ in range(ROUNDS):
         question_and_answer = game.make_task()
         question = question_and_answer[0]
         correct_answer = str(question_and_answer[1])
@@ -32,6 +32,4 @@ def run_game_engine(game):
         else:
             generate_wrong_message(user_answer, correct_answer, user_name)
             break
-
-    if answers == 3:
-        print(f'Congratulations, {user_name}!')
+    print(f'Congratulations, {user_name}!')
